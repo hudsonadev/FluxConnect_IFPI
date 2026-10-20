@@ -1,0 +1,606 @@
+* {
+        font-family: "Inter", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        --cor-p-principal: #0f1923;
+        --cor-p-secundaria: #6b7585;
+        --backgorud-hover: #bed7fa69;
+        --color-houver: #1a6fc4;
+        --backgroud-active: #9bc0f5;
+      }
+
+      body {
+        display: flex;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      /* nav {
+        display: flex;
+        margin: 3px;
+        background-color: #a1a1a1;
+      }
+
+      nav {
+        flex: 1 1 200px;
+      } */
+      /* Container principal - Main */
+      .container {
+        background-color: #ddebfd;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+      }
+      /* Barra lateral de navegação */
+      .sidebar {
+        background-color: #ffff;
+        width: 248px;
+        height: 100vh;
+        display: flex;
+        flex: 0 0 248px;
+        margin: 0;
+        gap: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        border-right: 1.25px solid rgba(15, 25, 35, 0.07);
+      }
+      /* Container que fica a logo */
+      .logo-container {
+        width: 100%;
+        height: 102px;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 12px;
+        display: flex;
+        padding: 24px;
+        box-sizing: border-box;
+        cursor: pointer;
+        border-bottom: 1.25px solid rgba(15, 25, 35, 0.07);
+      }
+      .logo-text {
+        display: flex;
+        flex-direction: column;
+      }
+      /* Estilização da Logo Fluxconnect */
+      .logo-fluxconnect {
+        width: 66px;
+        height: 53px;
+        position: relative;
+      }
+      .logo-container-p1 {
+        color: var(--cor-p-principal);
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 19.5px;
+        margin: 0;
+        word-wrap: break-word;
+      }
+      .logo-container-p2 {
+        color: var(--cor-p-secundaria);
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 16.5px;
+        margin: 0;
+        word-wrap: break-word;
+      }
+      .links {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* gap: 20px; */
+        padding: 0 16px;
+      }
+      .links a {
+        height: 40px;
+        color: var(--cor-p-secundaria);
+        text-decoration: none;
+        position: relative;
+        padding: 10px 12px;
+
+        display: flex;
+        align-items: center;
+        font-size: 13.5px;
+        font-weight: 400;
+        line-height: 20.25px;
+        gap: 12px;
+        word-break: break-word;
+      }
+
+      /* Efeitoos */
+      .links a:hover {
+        background-color: var(--backgorud-hover);
+        color: var(--color-houver);
+        border-radius: 8px;
+        font-weight: 500;
+      }
+      .links a:active{
+        background: var(--backgroud-active);
+        transform: scale(0.98);
+      }
+      .sidebar-menu a:hover img,
+      .sidebar-menu a:hover svg {
+        opacity: 1; /* O ícone ganha total nitidez */
+      }
+      .links a img {
+        min-height: 20px;
+        min-width: 20px;
+        display: block;
+        transition: all 0.2s ease;
+      }
+
+      /* Estilização do conteiner user abaixo dos links */
+      .container-user {
+        width: 90%;
+        height: 67px;
+        border-radius: 10px;
+        margin: 12px;
+        background-color: #ddebfd;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: auto;
+        padding: 16px 20px;
+        justify-content: start;
+        box-sizing: border-box;
+        gap: 12px;
+        cursor: pointer;
+        text-align: left;
+      }
+      /* estilização Avatar */
+      .avatar-user {
+        width: 40px;
+        height: 40px;
+        background: linear-gradient(135deg, #1a6fc4, #378add);
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-weight: 600;
+        color: #fff;
+        font-size: 14px;
+      }
+      .info-user {
+        display: flex;
+        flex-direction: column;
+      }
+      .nome-user {
+        color: var(--cor-p-principal);
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0;
+      }
+      .paciente {
+        color: var(--cor-p-secundaria);
+        font-size: 11px;
+        font-weight: 16.5px;
+        margin: 0;
+      }
+
+      /* Estilização de todo o conteudo da Main */
+      main {
+        background-color: #ddebfd27;
+        flex: 1;
+        min-height: 0;
+        overflow-y: auto; /* Faz todo o conteudo de main hehehe */
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+      }
+      .container-comprimentos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+      }
+      .container-comprimentos p {
+        color: var(--cor-p-secundaria);
+        word-wrap: break-word;
+        line-height: 19.5px;
+      }
+      .incone-notification {
+        display: flex;
+        margin-right: auto;
+        align-items: end;
+        display: inline-flex;
+      }
+      .text-acompanhe {
+        font-size: 13.5px;
+        font-weight: 400;
+        line-height: 20.25px;
+        word-wrap: break-word;
+      }
+      .nome-paciente {
+        color: #0f1923;
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 32.5px;
+        word-wrap: break-word;
+      }
+      .icone-notification {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        background: white;
+        border-radius: 50%;
+        border: 1.25px solid rgba(15, 25, 35, 0.13);
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .icone-notification img {
+        width: 17px;
+        height: 17px;
+      }
+      /*
+      Bolinha de notificação
+      .text-inc{
+        background-color: #ef9f27;
+        height: 8px;
+        width: 8px;
+        position: absolute;
+        border-radius: 50%;
+        border: 1.3px solid #f4f6f9;
+        box-sizing: border-box;
+        top: 5px;
+        right: 6px;
+        margin: 0;
+      } */
+
+      .container-info-numeros {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        width: 100%;
+        flex-wrap: wrap;
+      }
+      .consultas-full {
+        width: 212px;
+        height: 109px;
+        background-color: #ffffff;
+        border-radius: 16px;
+        padding: 16px 20px;
+        border: 1.3px solid rgba(15, 25, 35, 0.08);
+        box-shadow: 0px 1px 3px rgba(15, 25, 35, 0.04);
+        box-sizing: border-box;
+      }
+      .p1 {
+        color: var(--cor-p-principal);
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 33px;
+        word-wrap: break-word;
+      }
+      .p2 {
+        color: var(--cor-p-secundaria);
+        font-size: 11.5px;
+        font-weight: 400;
+        line-height: 17px;
+        word-wrap: break-word;
+      }
+      .container-info-numeros h2 {
+        color: var(--cor-p-secundaria);
+        font-size: 11px;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 16px;
+        letter-spacing: 0.55px;
+        word-wrap: break-word;
+      }
+
+      /* Estilizacao dos Cards: Consultas/Exames */
+      .div-main-proximo-consultasExames {
+        display: flex;
+        flex-direction: row;
+        gap: 19.5px;
+        flex-wrap: wrap;
+      }
+      .card-proxima-consulta {
+        min-width: 438px;
+        min-height: 307;
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+        gap: 16px;
+        background-color: #fff;
+        border-radius: 16px;
+        box-shadow: 0px 4px 16px rgba(15, 25, 35, 0.04);
+        border: 1.3px solid rgba(15, 25, 35, 0.05);
+        outline: 1.25px;
+      }
+      .text-inicio-card {
+        color: var(--cor-p-secundaria);
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 16px;
+        letter-spacing: 1.1px;
+        word-wrap: break-word;
+      }
+      .div-proxima-consulta {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+      }
+      .text-config {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      .div-proxima-consulta img {
+        margin-left: auto;
+      }
+      .config-status {
+        width: fit-content;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+      }
+      .status {
+        margin: 0;
+        align-items: center;
+        background: #e1f5ee;
+        text-align: center;
+        padding: 2px 10px;
+        height: 20px;
+        width: 93px;
+        border-radius: 12px;
+        color: #0f6e56;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 16px;
+        word-wrap: break-word;
+      }
+      .status-point {
+        position: static;
+        height: 6px;
+        width: 6px;
+        position: relative;
+        left: 11px;
+        background: #0f6e56;
+        border-radius: 50%;
+      }
+      .div-config-text h1 {
+        color: var(--cor-p-principal);
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 25px;
+        word-wrap: break-word;
+      }
+      .div-config-text p {
+        color: var(--cor-p-secundaria);
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 19px;
+        word-wrap: break-word;
+      }
+      .icone-text {
+        color: var(--cor-p-secundaria);
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        display: inline-flex;
+        gap: 8px;
+      }
+      .buttons-card {
+        display: flex;
+        justify-content: space-between;
+      }
+      .buttons-card a {
+        text-decoration: none;
+        display: inline-flex;
+        text-align: center;
+      }
+      .a-reagendar-consulta {
+        height: 44px;
+        width: 178px;
+        display: flex;
+        box-sizing: border-box;
+      }
+      .a-reagendar-consulta a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        color: #2563eb;
+        width: 100%;
+        height: 100%;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 19px;
+        word-wrap: break-word;
+
+        gap: 28px;
+        box-shadow: 1px 2px 5px rgba(15, 25, 35, 0.062);
+        border: 1.3px solid rgba(15, 25, 35, 0.05);
+        border-radius: 10px;
+      }
+      .a-reagendar-consulta img {
+        height: fit-content;
+        display: block;
+      }
+
+      .a-cancelar-consulta {
+        height: 44px;
+        width: 178px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+      }
+      .a-cancelar-consulta img {
+        height: fit-content;
+        display: block;
+      }
+      .a-cancelar-consulta a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        color: #ef4444;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 19px;
+        word-wrap: break-word;
+      }
+
+      /* Stilizaçõa 2 card */
+      .config-status-exame {
+        width: fit-content;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+      }
+      .status-point-exame {
+        position: static;
+        height: 6px;
+        width: 6px;
+        position: relative;
+        left: 11px;
+        background: #854f0b;
+        border-radius: 50%;
+      }
+      .status-exame {
+        margin: 0;
+        align-items: center;
+        background: #fef3e2;
+        text-align: center;
+        padding: 2px 10px;
+        height: 20px;
+        width: 93px;
+        border-radius: 12px;
+        color: #854f0b;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 16px;
+        word-wrap: break-word;
+      }
+      .div-proxima-consulta-exame {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+      }
+      .div-icone {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        background-color: #e1f5ee;
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+      }
+      .div-icone img {
+        width: 18px;
+        height: 18px;
+      }
+
+      /* Estilizacao button card 2 */
+      .div-ver-preparo {
+        box-sizing: border-box;
+      }
+      .div-ver-preparo a {
+        text-decoration: none;
+        color: #0f6e56;
+        /* display: inline-flex; */
+        text-align: center;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 19px;
+        word-wrap: break-word;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 10px;
+        box-shadow: 1px 2px 5px rgba(15, 35, 17, 0.274);
+        border: 1.3px solid #0f6e566e;
+        border-radius: 10px;
+      }
+      .containers-atalho-rapido {
+        display: inline-flex;
+        flex-direction: column;
+      }
+      .p-principal {
+        color: var(--cor-p-secundaria);
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 19.5px;
+        letter-spacing: 1.3px;
+        word-wrap: break-word;
+      }
+
+      .div-engloba-cards-athalho {
+        display: flex;
+        flex-direction: row;
+        padding-top: 16px;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+      .container-menor-atalho {
+        width: 212px;
+        height: auto;
+      }
+      .container-menor-atalho a {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        background-color: #ffffff;
+        border-radius: 16px;
+        padding: 20px;
+        border: 1.3px solid rgba(15, 25, 35, 0.08);
+        box-shadow: 0px 1px 3px rgba(15, 25, 35, 0.04);
+        box-sizing: border-box;
+      }
+      .container-menor-atalho img {
+        width: fit-content;
+        display: block;
+      }
+      .container-menor-atalho a,
+      p {
+        text-decoration: none;
+        color: var(--cor-p-principal);
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 18px;
+        word-wrap: break-word;
+      }
+      .test-background {
+        width: 40px;
+        height: 40px;
+
+        background: #f3eeff;
+        border-radius: 12px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      /* Estilização ultimos container */
+      /* .container-main-notifacoes-recentes{
+
+      }
+      .main-p-text p{
+        color: var(--cor-p-secundaria);
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 19px;
+        letter-spacing: 1.3px;
+        word-wrap: break-word;
+      } */

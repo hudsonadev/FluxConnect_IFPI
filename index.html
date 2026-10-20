@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tela Principal Paciente</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="logo-container">
+        <img
+          src="/logo/fluxConnect 2.svg"
+          alt="Logo FluxConnect"
+          class="logo-fluxconnect"
+        />
+        <div class="logo-text">
+          <p class="logo-container-p1">FluxConnect</p>
+          <p class="logo-container-p2">Portal do Paciente</p>
+        </div>
+      </div>
+      <nav class="links">
+        <a href="#"
+          ><img src="./icones/home.svg" alt="incone-home" /><span
+            >Início</span
+          ></a
+        >
+        <a href="#"
+          ><img src="./icones/calendar.svg" alt="icone-calendar" /><span
+            >Consultas</span
+          >
+        </a>
+        <a href="#"
+          ><img src="./icones/exeme.svg" alt="icone-exame" /><span
+            >Exames</span
+          ></a
+        >
+        <a href="#"
+          ><img src="./icones/historico.svg" alt="icones-histrico" />
+         <span>Histórico</span> </a
+        >
+        <a href="#"
+          ><img src="./icones/perfil.svg" alt="icone-perfil" /><span>Minha Conta</span></a
+        >
+      </nav>
+
+      <div class="container-user">
+        <!-- Circulo com as iniciais -->
+        <div class="avatar-user">NJ</div>
+
+        <div class="info-user">
+          <p class="nome-user">Neymar JR</p>
+          <p class="paciente">Paciente</p>
+        </div>
+      </div>
+    </aside>
+
+    <main class="container-main">
+      <div class="container-comprimentos">
+        <div class="config-texts">
+          <p class="bom-dia">Bom dia,</p>
+          <h1 class="nome-paciente">Neymar Jr</h1>
+          <p class="text-acompanhe">
+            Acompanhe suas consultas e exames em um só lugar.
+          </p>
+        </div>
+        <!-- <div class="icone-notification">
+          <img src="./icones/notification.svg" alt="icone-notificação" />
+          <p class="text-inc"></p>
+        </div> -->
+      </div>
+      <!-- Primeiros Cards com  as informações -->
+      <div></div>
+      <div class="container-info-numeros">
+        <div class="consultas-full">
+          <h2>Consultas este ano</h2>
+          <p class="p1">7</p>
+          <p class="p2">+2 vs ano anterior</p>
+        </div>
+        <div class="consultas-full">
+          <h2>Exames realizados</h2>
+          <p class="p1">12</p>
+          <p class="p2">3 aguadando resultado</p>
+        </div>
+        <div class="consultas-full">
+          <h2>Próximo evento</h2>
+          <p class="p1">2 dias</p>
+          <p class="p2">Hemogtafia - 12 Jun</p>
+        </div>
+        <div class="consultas-full">
+          <h2>Ultimo acesso</h2>
+          <p class="p1">Hoje</p>
+          <p class="p2">08:14 . Web</p>
+        </div>
+      </div>
+
+      <!-- Cards: Proximas Consultas/Exames -->
+      <div class="div-main-proximo-consultasExames">
+        <!-- Card 1: Proxima Consulta -->
+        <div class="card-proxima-consulta">
+          <div class="div-proxima-consulta">
+            <div class="text-config">
+              <p class="text-inicio-card">Próxima consulta</p>
+
+              <div class="config-status">
+                <div class="status-point"></div>
+                <p class="status">Confirmado</p>
+              </div>
+            </div>
+            <img src="/icones/doctor.svg" alt="icone-doctor" />
+          </div>
+
+          <div class="div-config-text">
+            <h1>Dr.José Inacio</h1>
+            <p>Clínico Geral</p>
+          </div>
+
+          <div class="icone-text">
+            <p>
+              <img
+                src="./icones/calendar-card.svg"
+                alt="icone-calendar"
+                class="incone-calendar-card"
+              />
+              Sábado, 14 de Junho de 2026
+            </p>
+
+            <p>
+              <img src="./icones/time.svg" alt="" /> 10:30 · Duração estimada 30
+              min
+            </p>
+
+            <p>
+              <img src="/icones/localition.svg" alt="" /> Clínica FluxMes - Rua
+              Defala Attem, 812
+            </p>
+          </div>
+          <!-- Butoes no fim do card -->
+          <div class="buttons-card">
+            <div class="a-reagendar-consulta">
+              <a href="#"
+                >Reagenda <img src="/icones/refresh.svg" alt="icone-refresh"
+              /></a>
+            </div>
+            <div class="a-cancelar-consulta">
+              <a href="#">Cancelar Consulta</a>
+              <img src="/icones/close_small.svg" alt="icone-close" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Proximo Exame -->
+        <div class="card-proxima-consulta">
+          <div class="div-proxima-consulta-exame">
+            <div class="text-config">
+              <p class="text-inicio-card">Próxima exame</p>
+
+              <div class="config-status-exame">
+                <div class="status-point-exame"></div>
+                <p class="status-exame">Agendado</p>
+              </div>
+            </div>
+            <div class="div-icone">
+              <img src="/icones/exame-gren.svg" alt="icone-exame" />
+            </div>
+          </div>
+
+          <div class="div-config-text">
+            <h1>Hemograma Completo</h1>
+            <p>Análise clínica de sangue</p>
+          </div>
+
+          <div class="icone-text">
+            <p>
+              <img
+                src="./icones/calendar-card.svg"
+                alt="icone-calendar"
+                class="incone-calendar-card"
+              />
+              Quinta-feira, 12 de Junho de 2026
+            </p>
+
+            <p>
+              <img src="./icones/time.svg" alt="" /> 08:00 · Em jejum de 8 horas
+            </p>
+
+            <p>
+              <img src="/icones/localition.svg" alt="" /> Lab FluxLab - Rua
+              Defala Attem, 822
+            </p>
+          </div>
+
+          <!-- Butoes no fim do card -->
+          <div class="div-ver-preparo">
+            <a href="#"
+              >Ver preparo
+              <img src="/icones/ceta-green.svg" alt="icone-refresh"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cads Atalho Rapidos -->
+      <div class="containers-atalho-rapido">
+        <p class="p-principal">Atalhos Rapidos</p>
+        <div class="div-engloba-cards-athalho">
+          <div class="container-menor-atalho">
+            <a href="#">
+              <div class="test-background" style="background: #a9c7f04f">
+                <img src="/icones/doctor.svg" alt="" />
+              </div>
+
+              <p>Agendar Consultas</p>
+            </a>
+          </div>
+          <div class="container-menor-atalho">
+            <a href="#">
+              <div class="test-background" style="background: #e1f5ee">
+                <img src="/icones/exame-gren.svg" alt="" />
+              </div>
+
+              <p>Agendar Exame</p>
+            </a>
+          </div>
+          <div class="container-menor-atalho">
+            <a href="#">
+              <div class="test-background" style="background: #fef3e2">
+                <img src="/icones/calendar-color.svg" alt="" />
+              </div>
+
+              <p>Minhas Consultas</p>
+            </a>
+          </div>
+          <div class="container-menor-atalho">
+            <a href="#">
+              <div class="test-background">
+                <img src="/icones/nota-color.svg" alt="" />
+              </div>
+
+              <p>Meus Exames</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ultimos Containers GRAÇASS A DEUSS! -->
+      <!-- <div class="container-main-notifacoes-recentes">
+        <div class="main-p-text">
+          <p>Notificações recentes</p>
+        </div>
+
+        <div>
+          <img src="/icones/pulser-gree.svg" alt="" />
+          <p>Resultado do exame de Gicose disponível</p>
+        </div>
+
+        <div>
+          <img src="/icones/varifiction.svg" alt="" />
+          <p>Resultado do exame de Gicose disponível</p>
+        </div>
+
+        <div>
+          <img src="/icones/atenction.svg" alt="" />
+          <p>Resultado do exame de Gicose disponível</p>
+        </div>
+      </div> -->
+    </main>
+  </body>
+</html>
