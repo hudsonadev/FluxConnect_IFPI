@@ -1,4 +1,3 @@
-
 /* Seletores dos elementos da tela */
 const senha = document.querySelector("#senha");
 const email = document.querySelector("#email");
@@ -97,7 +96,7 @@ document.querySelector("#esqueci").addEventListener("click", function (evento) {
 // Botão para criar conta.
 document.querySelector("#criarConta").addEventListener("click", function (evento) {
   evento.preventDefault();
-  window.location.href = "cadastro.html";
+  window.location.href = "../../tela_criacao_conta/maur/index.html";
 });
 
 // Link da política de privacidade.
